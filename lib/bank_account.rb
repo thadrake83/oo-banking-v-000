@@ -24,8 +24,8 @@ def display_balance
   "Your balance is $#{@balance}."
 end
 
-def valid?(name)
-  if @status = open && @balance > 0
+def valid?
+  if @status == open && @balance > 0
     true
   else
     false
